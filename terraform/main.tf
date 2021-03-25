@@ -24,3 +24,7 @@ provider "digitalocean" {
 data "digitalocean_ssh_key" "ssh_key" {
   name = "G551JM Notebook"
 }
+
+data "digitalocean_domain" "domain" {
+  name = "devshiro.com"
+}
