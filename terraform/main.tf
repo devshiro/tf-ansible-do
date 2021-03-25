@@ -21,6 +21,6 @@ provider "digitalocean" {
   token = var.do_token
 }
 
-data "digitalocean_ssh_key" "terraform" {
+data "digitalocean_ssh_key" "ssh_key" {
   name = "G551JM Notebook"
 }
