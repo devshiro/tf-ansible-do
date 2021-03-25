@@ -9,7 +9,7 @@ resource "digitalocean_droplet" "www-1" {
 
 
 resource "digitalocean_record" "www-1" {
-  domain = digitalocean_domain.domain.name
+  domain = data.digitalocean_domain.domain.name
   type   = "A"
   name   = "www-1"
   value  = digitalocean_droplet.www-1.ipv4_address
